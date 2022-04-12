@@ -1,0 +1,10 @@
+export default
+{
+    PING:"PING",
+    LOGIN:"LOGIN",
+    LOGIN_RESULT:"LOGIN_RESULT",
+    ENTER_GAME:"ENTER_GAME",
+    OBJ_UPDATE:"OBJ_UPDATE",
+    MOUSE_POINT:"MOUSE_POINT",
+}
+
