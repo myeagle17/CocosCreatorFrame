@@ -5,8 +5,8 @@
   /* Add your custom configuration here. */
   "compilerOptions": {
     "strict": false,
-    // "types": [
-    //   "./assets/Script/extension",
-    // ],
+    "types": [
+      "./assets/libs/extension",
+    ],
   }
 }
