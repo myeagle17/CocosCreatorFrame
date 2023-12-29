@@ -1,7 +1,7 @@
 import { _decorator, Node, Component } from 'cc';
 import { UIMgr } from './ui/UIMgr';
-import { ModuleManager } from './module/ModuleManager';
 import { ResAB } from './res/ResAB';
+import { ModuleBase } from './module/ModuleBase';
 
 
 const { ccclass ,property} = _decorator;
@@ -26,7 +26,7 @@ export class Game extends Component {
     }
 
     public update(deltaTime: number){
-        ModuleManager.ins().Update(deltaTime);
+        ModuleBase.update(deltaTime);
         UIMgr.ins().updateUIForm(deltaTime);
         ResAB.ins().update(deltaTime);
     }

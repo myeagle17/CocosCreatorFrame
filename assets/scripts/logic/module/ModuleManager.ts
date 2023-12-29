@@ -1,5 +1,5 @@
-import { BaseClass } from "../pattern/BaseClass";
-import { ModuleBase } from "./ModuleBase";
+import { BaseClass } from "../../engine/pattern/BaseClass";
+import { ModuleBase } from "../../engine/module/ModuleBase";
 
 export class ModuleManager extends BaseClass {
 
@@ -8,7 +8,6 @@ export class ModuleManager extends BaseClass {
     }
 
     public InitModule() {
-
         ModuleBase.update(0);
     }
 
