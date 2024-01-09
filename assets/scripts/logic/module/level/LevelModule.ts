@@ -1,9 +1,9 @@
 import { ModuleBase } from "../../../engine/module/ModuleBase";
 
-export class MapModule extends ModuleBase {
+export class LevelModule extends ModuleBase {
     public InitProcessor(): void {
         super.InitProcessor()
-        
+        // 
 
     }
 }

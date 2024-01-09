@@ -3,7 +3,7 @@ import { Game } from '../engine/Game';
 import ExcelConfig from './data/excel/ExcelConfig';
 import { UIMgr } from '../engine/ui/UIMgr';
 import { UIFormId } from '../engine/ui/UIFormId';
-import { MapModule } from './module/map/MapModule';
+import { LevelModule } from './module/level/LevelModule';
 const { ccclass, property } = _decorator;
 
 @ccclass('App')
@@ -16,11 +16,11 @@ export class App extends Game{
         super.runGame();
         ExcelConfig.LoadAll(()=>{
            this.InitModule();
-            UIMgr.ins().OpenUIForm(UIFormId.UITipsForm,"hello world");
+            UIMgr.ins().OpenUIForm(UIFormId.UITipsForm , "hello world");
         })
     }
 
     private InitModule():void{
-        new MapModule("map");
+        new LevelModule("map");
     }
 }
