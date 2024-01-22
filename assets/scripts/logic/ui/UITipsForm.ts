@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Button, Sprite, Label } from 'cc';
+import { _decorator, Label } from 'cc';
 import { UIBaseForm } from '../../engine/ui/UIBaseForm';
 const { ccclass, property } = _decorator;
 
